@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h1>Fill in the details of the new project</h1>
+
+<form action="{{url_for('new')}}" method="POST">
+    <label>Project name: </label>
+    <input type="text" name="name" required> <br>
+    <label>Project description: </label> <br>
+    <textarea name="description" id="description" cols="60" rows="10"></textarea> <br>
+    <label>Project duration: </label>
+    <input type="number" name="duration" required> <br>
+    <input type="submit" value="Submit">
+
+</form>
+
+{% endblock %}

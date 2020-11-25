@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h1>Create Actions for your Project</h1>
+
+<p>These are milestones for your project</p>
+
+<form action="{{url_for('create_action', project_id=project.id)}}" method="POST">
+    <input name="project_id" value="{{project.id}}" readonly>
+    <input name="description" type="text" placeholder="Description" required>
+    <input name="note" type="text" placeholder="Note" required>
+    <input type="submit" value="Submit">
+
+
+</form>
+
+{% endblock %}

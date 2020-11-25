@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="projects_container">
+
+    <p class="project_name">Title: {{project.name}}</p>
+
+    <p class="project_description">Description</p>
+
+        {{project.description}}
+
+    <p class="project_duration">Duration:  {{ project.duration }} </p>
+
+</div>
+
+
+
+<form action="{{url_for('single_project', project_id=project.id)}}" method="POST">
+    <input class="submit" type="submit" value="Delete">
+</form>
+
+
+<a href="{{url_for('edit_project', project_id=project.id)}}">EDIT</a> <br>
+
+<a href="{{url_for('create_action', project_id=project.id)}}">Create Project Task</a> <br>
+
+<a href="{{url_for('project_actions', project_id=project.id)}}">Project Task list</a> <br>
+
+{% endblock %}

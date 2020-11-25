@@ -1,0 +1,106 @@
+body {
+    background-image: url('./bg.png');
+    }
+
+.header {
+    background-color: rgba(9, 87, 150, 0.384);
+    display: block;
+    width: 100%;
+    height: 10rem;
+
+}
+
+.welcome-note {
+    font-style: normal;
+    color-interpolation-filters: linearRGB;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(235, 220, 220);
+    font-size: 50px;
+    text-align: center;
+    position: bottom;
+}
+
+.header-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(156, 8, 8);
+    font-size: 20px;
+    text-align: center;
+    text-decoration-style: solid;
+}
+
+.index_text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: green;
+}
+
+input, textarea {
+    padding: 5px 5px 5px 30px;
+    background-color: sandybrown;
+    display: block;
+    margin-bottom: 5px;
+    border: 1px solid rgb(180, 112, 112);
+    font-size: 120%;
+    width: 400px;
+    align-content: stretch;
+}
+
+.login-action, .sign-up-action {
+    color: rgba(196, 74, 90, 0.384);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.submit {
+    background-color: black;
+    color: rgb(224, 224, 235);
+    border-bottom: slategray;
+    width: 100px;
+    font-size: 120%;
+    text-align: center;
+    padding: 10px;
+    float: center;
+
+}
+.sign-up-form, .login-form {
+    width: 600px;
+    float: left;
+    margin: 25px;
+}
+
+.sign-up-form {
+    background-color: rgb(224, 224, 235);
+    display: flexbox;
+    width: fit-content;
+    height: fit-content;
+}
+
+
+.project_container {
+    background-color: rgba(150, 80, 118, 0.63);
+    display: block;
+    width: 80%;
+    height: 15rem;
+}
+
+.actions_container {
+    background-color: rgba(219, 43, 96, 0.63);
+    display: block;
+    width: 60%;
+    height: 10rem;
+    float: left;
+    margin: 25px;
+    padding: 20px;
+    border: 5px solid blueviolet;
+}
+
+.project_name {
+    color: rgb(228, 233, 236);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+}
+
+.project_description {
+    color: rgb(26, 165, 7);
+    font-size: 20px;
+}

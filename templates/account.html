@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h1 class="user-welcome">Welcome {{user.full_name.title()}}</h1>
+
+<br>
+
+
+
+<nav class="account-nav">
+    <li><a href="/projects">See all projects</a></li>
+    <li><a href="/project/create">Create new project</a></li>
+</nav>
+
+{% endblock %}

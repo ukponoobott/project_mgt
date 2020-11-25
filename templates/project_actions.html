@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+{% for action in actions %}
+
+    <div class="actions_container">
+
+    <a href="{{url_for('single_action_for_project', project_id=action.project_id, action_id=action.id)}}">Task 00{{action.id}}</a>
+
+    <p class="action_description">{{action.description}}</p>
+
+    <p class="action_note">{{action.note}}</p>
+
+    
+    </div>
+
+    <hr>
+
+    {% endfor %}
+
+
+{% endblock %}

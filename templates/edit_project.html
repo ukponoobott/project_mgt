@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h1>Edit this Project</h1>
+<form method="POST" action="{{url_for('edit_project', project_id=project.id)}}">
+
+    <input type="text" name="name" value="{{project.name}}">
+    <label>Project description:</label> <br>
+    <textarea name="description" id="description" cols="60" rows="10"> {{project.description}} </textarea> <br>
+    <input type="number" name="duration" value="{{project.duration}}">
+    <input class="submit" type="submit" value="Update Project">
+
+</form>
+
+{% endblock %}

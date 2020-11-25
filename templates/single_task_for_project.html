@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <div class="actions_container">
+
+    <p>Task 00{{action.id}}</p>
+    
+    <p class="project_name"> Project: {{ project.name }}</p>
+
+    <p class="action_description">{{action.description}}</p>
+
+    <p class="action_note">{{action.note}}</p>
+
+    <form action="{{url_for('single_action_for_project', action_id=action.id, project_id=project.id)}}" method="POST">
+        <input class="submit" type="submit" value="Delete">
+    </form>
+
+    </div>
+    
+
+{% endblock %}

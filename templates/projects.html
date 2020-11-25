@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+    {% for project in projects %}
+
+    <div class="projects_container">
+
+    <p class="project_name"><a href="{{url_for('single_project', project_id=project.id)}}">{{project.name}}</a></p>
+
+    <p class="project_description">Description: {{project.description}}</p>
+
+    <p class="project_duration">Duration:  {{ project.duration }} </p>
+
+    </div>
+
+    <hr>
+
+    {% endfor %}
+
+
+    <a href="{{url_for('new')}}">Create new project</a>
+
+
+
+{% endblock %}

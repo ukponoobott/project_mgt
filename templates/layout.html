@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Mgr</title>
+    <link href="../static/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+{% if session %}
+<a href="{{url_for('account') }}">Dashboard</a>
+<a href="{{ url_for('logout') }}">Logout</a>
+
+{% else %}
+
+{% endif %}
+
+<div class="header">
+
+    <h1 class="welcome-note">Project Manager</h1>
+
+    <p class="header-text">Keep Track of Projects and Task</p>
+
+</div>
+
+{% for message in get_flashed_messages() %}
+{{ message }}
+{% endfor %}
+
+{%  block content %}
+
+{% endblock %}
+
+</body>
+</html>
