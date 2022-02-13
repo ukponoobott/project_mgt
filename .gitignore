@@ -2,3 +2,13 @@
 /.idea
 /venv
 .env
+/models/__pycache__
+/resources/__pycache__
+/libs/__pycache__
+/libs/__pycache__/__init__.cpython-37.pyc
+/libs/__pycache__/mailgun.cpython-37.pyc
+/libs/__pycache__/token.cpython-37.pyc
+/models/__pycache__/__init__.cpython-37.pyc
+/models/__pycache__/project.cpython-37.pyc
+/models/__pycache__/task.cpython-37.pyc
+/models/__pycache__/user.cpython-37.pyc
